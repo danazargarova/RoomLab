@@ -24,10 +24,13 @@ public class Runner {
 			}
 		}
 		
-		//Create a random winning room.
-		int x = (int)(Math.random()*building.length);
-		int y = (int)(Math.random()*building.length);
+		//Place winning room.
+		int x = 5;
+		int y = 4;
 		building[x][y] = new WinningRoom(x, y);
+
+		//Place Dana's room
+		int x=
 		 
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
