@@ -4,8 +4,8 @@ import Game.Runner;
 import People.Person;
 public class DanasRoom extends Room {
 
-    public DanasRoom(int x, int y){
-        super(x,y);
+    public DanasRoom(int a, int b){
+        super(a,b);
     }
 
     @Override

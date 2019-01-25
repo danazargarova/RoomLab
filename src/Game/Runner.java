@@ -3,6 +3,7 @@ package Game;
 import People.Person;
 import Rooms.Room;
 import Rooms.WinningRoom;
+import Rooms.DanasRoom;
 
 import java.util.Scanner;
 
@@ -30,10 +31,12 @@ public class Runner {
 		building[x][y] = new WinningRoom(x, y);
 
 		//Place Dana's room
-		int x=
+		int a= (int)(Math.random()*building.length-1)+1;
+		int b=(int)(Math.random()*building.length-1)+1;
+		building[a][b]=new DanasRoom(a, b);
 		 
 		 //Setup player 1 and the input scanner
-		Person player1 = new Person("FirstName", "FamilyName", 0,0);
+		Person player1 = new Person("FirstName", "FamilyName", 0, 0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
